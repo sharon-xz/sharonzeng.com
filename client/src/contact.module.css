@@ -1,0 +1,72 @@
+.contact {
+    background: #313131;
+    text-align: center;
+    color: #FFF9E5;
+    padding: 0 0 50px 0;
+}
+
+.contactMe {
+    font: 60px/75px "Audrey Regular", sans-serif;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #FFFCEE;
+    padding: 1em 0 0;
+    margin: 0;
+}
+
+.formTitle {
+    font-weight: 300;
+    letter-spacing: 1.05px;
+    font-size: 27px;
+    line-height: 57px;
+    text-align: center;
+    color: #FFFCEE;
+}
+
+.formSubtitle {
+    font-weight: lighter;
+    font-size: 21px;
+    line-height: 40px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #FFFCEE;
+    max-width: 506px;
+    margin: 0 auto 1em;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 506px;
+    margin: 0 auto;
+}
+
+.message {
+    width: 95%;
+    border: 1px solid #707070;
+    font: normal normal 300 21px/40px Muli;
+    letter-spacing: 0.75px;
+    padding: 5px 10px;
+    margin-bottom: 1em;
+    resize: none;
+}
+
+.email{
+    width: 95%;
+    border: 1px solid #707070;
+    font: normal normal 300 21px/40px Muli;
+    letter-spacing: 0.75px;
+    padding: 5px 10px;
+    margin-bottom: 1em;
+}
+
+.submitBtn {
+    width: 100%;
+    font: normal normal 300 21px/40px Muli;
+    letter-spacing: 0.75px;
+    margin-bottom: 1em;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    background-color: #fffce9;
+}

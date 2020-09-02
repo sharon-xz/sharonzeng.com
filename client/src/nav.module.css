@@ -1,0 +1,43 @@
+.nav {
+    background-color: #3D3C37;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 5px 30px;
+}
+
+
+.nav li a {
+    color: #FFFFFF;
+    font-family: muli, sans-serif;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.logo:before {
+    background-image: url("assets/_images/logo-sharonzeng.png");;
+    background-size: 45px 45px;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    content: "";
+}

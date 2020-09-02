@@ -1,0 +1,100 @@
+@font-face{
+    font-family: 'Audrey Regular';
+    src: url('assets/_fonts/Audrey-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.home {
+    background-color: #FFF9E5;
+}
+
+h1 {
+    padding: 5.5em 0 3em;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.headingFirstName {
+    display: block;
+    text-align: center;
+    font-family: 'Audrey Regular', sans-serif;
+    font-size: 71px;
+    line-height: 56px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.headingLastName {
+    display: block;
+    text-align: center;
+    font-family: muli, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 61px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.headingDescription {
+    text-align: center;
+    font-family: muli, sans-serif;
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: lighter;
+}
+
+.externalLinks {
+    text-align: center;
+    align-items: center;
+    padding: 1em 0 2em;
+}
+
+.externalLinks > a {
+    margin: 1em 0.8em;
+}
+
+
+.linkedInBtn:before {
+    background-image: url("assets/_images/linkedin-icon.png");
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    content: "";
+}
+
+.githubBtn:before {
+    background-image: url("assets/_images/github-icon.png");
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    content: "";
+}
+
+.devtoBtn:before {
+    background-image: url("assets/_images/dev-icon.png");
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    content: "";
+}
+
+.downArrow:before {
+    background-image: url("assets/_images/downArrowDark.png");;
+    background-size: 90px 40px;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    content: "";
+}
+
+.downArrow {
+    text-align: center;
+    padding: 0.5em 0 1.8em;
+}

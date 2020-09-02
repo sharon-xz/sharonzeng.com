@@ -1,0 +1,85 @@
+.project {
+    background-color: #FFF9E5;
+    padding-bottom: 2em;
+}
+
+.myProject {
+    text-align: center;
+    font-family: 'Audrey Regular', sans-serif;
+    font-size: 60px;
+    line-height: 83px;
+    color: #313131;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.projectItem {
+    margin-bottom: 20px;
+
+}
+
+.projectImg {
+    display: inline-block;
+    width: 50%;
+}
+
+.projectImg img {
+    float: right;
+    width: 500px;
+    height: auto;
+}
+
+.projectDescription {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding: 0 5%;
+}
+
+.projectTitle {
+    font-family: muli, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 75px;
+    letter-spacing: 0.6px;
+    color: #313131;
+    text-transform: uppercase;
+}
+
+.projectTechStack {
+    font: 500 25px/35px muli, sans-serif;
+    letter-spacing: 0.5px;
+    color: #313131;
+}
+
+.projectTech {
+    font: lighter italic 25px/47px muli, sans-serif;
+    letter-spacing: 0.5px;
+    color: #313131;
+}
+
+.projectLink {
+    font: italic 28px/40px Cambria;
+    letter-spacing: 0.56px;
+    color: #2112F2;
+}
+
+.projectLink a {
+    margin-right: 1em;
+}
+
+.downArrow:before {
+    background-image: url("assets/_images/downArrowDark.png");;
+    background-size: 90px 40px;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    content: "";
+}
+
+.downArrow {
+    text-align: center;
+    padding: 1.5em 0 0.5em;
+}

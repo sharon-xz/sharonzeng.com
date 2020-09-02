@@ -1,0 +1,61 @@
+
+.about {
+    background: #313131;
+    text-align: center;
+    color: #FFF9E5;
+    padding: 0 0 50px 0;
+}
+
+.aboutMe {
+    font: 60px/75px "Audrey Regular", sans-serif;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #FFFCEE;
+    padding: 1em 0 0.5em;
+    margin: 0;
+}
+
+.intro {
+    font-family: muli, sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 83px;
+    color: #FFFCEE;
+}
+
+.introItem {
+    margin: 10px auto 30px;
+}
+
+.introTitle {
+    text-align: center;
+    font: 35px/60px muli, san-serif;
+    letter-spacing: 1.05px;
+}
+
+.introDescription {
+    font-family: muli, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 45px;
+    color: #FFFCEE;
+    letter-spacing: 0.6px;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.downArrow:before {
+    background-image: url("assets/_images/downArrowLight.png");;
+    background-size: 90px 40px;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    content: "";
+}
+
+.downArrow {
+    text-align: center;
+    padding: 1em 0 0;
+}
