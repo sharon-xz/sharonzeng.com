@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const handleMessage = require('sendMessage');
+// const handleMessage = require('./sendMessage');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -21,6 +21,6 @@ app.post('/api/world', (req, res) => {
     );
 });
 
-app.post('/api/message', handleMessage);
+// app.post('/api/message', handleMessage);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
