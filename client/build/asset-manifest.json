@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d69f848d.chunk.css",
+    "main.js": "/static/js/main.7d24db93.chunk.js",
+    "main.js.map": "/static/js/main.7d24db93.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2274b96.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2274b96.js.map",
+    "static/js/2.df24d3bf.chunk.js": "/static/js/2.df24d3bf.chunk.js",
+    "static/js/2.df24d3bf.chunk.js.map": "/static/js/2.df24d3bf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0ff6c17c12e3d76717a2fae6201c5f4e.js": "/precache-manifest.0ff6c17c12e3d76717a2fae6201c5f4e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d69f848d.chunk.css.map": "/static/css/main.d69f848d.chunk.css.map",
+    "static/js/2.df24d3bf.chunk.js.LICENSE.txt": "/static/js/2.df24d3bf.chunk.js.LICENSE.txt",
+    "static/media/home.module.css": "/static/media/Audrey-Normal.d202603b.woff",
+    "static/media/sharonzeng_profile.png": "/static/media/sharonzeng_profile.0f00968d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2274b96.js",
+    "static/js/2.df24d3bf.chunk.js",
+    "static/css/main.d69f848d.chunk.css",
+    "static/js/main.7d24db93.chunk.js"
+  ]
+}

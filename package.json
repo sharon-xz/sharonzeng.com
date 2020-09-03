@@ -2,6 +2,8 @@
   "name": "sharonzeng.com",
   "version": "1.0.0",
   "scripts": {
+    "start": "nodemon --exec babel-node server.js",
+    "build": "babel server.js --out-file server.compiled.js",
     "client": "cd client && npm start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
@@ -11,6 +13,11 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "concurrently": "^4.0.1"
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "concurrently": "^4.0.1",
+    "nodemon": "^2.0.4"
   }
 }
