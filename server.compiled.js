@@ -8,7 +8,7 @@ var path = require('path'); // const handleMessage = require('./sendMessage');
 
 
 var app = express();
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8081;
 app.use(express["static"](path.join(__dirname, 'client', 'build')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({

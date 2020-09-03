@@ -4,7 +4,7 @@ const path = require('path');
 // const handleMessage = require('./sendMessage');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8081;
 
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
