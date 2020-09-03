@@ -27,7 +27,7 @@ export const Project = () => {
                     </div>
                     <div className={style.projectLink}>
                         <a href="https://www.sharonzeng.com" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                        <a href={null} target="_blank" rel="noopener noreferrer">View Source Code</a>
+                        <a href="https://github.com/sharon-xz/sharonzeng.com" target="_blank" rel="noopener noreferrer">View Source Code</a>
                     </div>
 
                 </div>

@@ -4,12 +4,12 @@ import style from "./contact.module.css";
 export const Contact = () => {
     const [message, setMessage] = useState("");
     const [email, setEmail] = useState("");
+    const [feedback, setFeedback] = useState(null);
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert([message, email]);
-
+        setFeedback("Thank you for your message! I'll reach out to you shortly.");
     }
 
     return (
@@ -31,7 +31,7 @@ export const Contact = () => {
                     />
                     <input className={style.submitBtn} type="submit" value="Submit" />
                 </div>
-
+                <div>{feedback}</div>
             </form>
 
         </div>
