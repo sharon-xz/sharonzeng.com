@@ -28,19 +28,26 @@ app.post('/api/message', (req, res) => {
     const body = req.body;
     if (!body.message || !body.email) {
         console.error("Missing message or email");
-        res.status(400).send('Invalid Request');
+        res.status(400).send({
+            error: "Invalid Request"
+        });
 
     } else {
         sendMessage(body).then(
             function (data) {
                 console.log("Message Successfully Sent", data.MessageId);
-                res.send(
-                    `Message Successfully Processed`
-                );
+                res.status(400).send({
+                    status: "ok",
+                    data: "Thank you for your message! I'll reach out to you shortly."
+                });
             }).catch(
             function (err) {
                 console.error("send message error", err, err.stack);
-                res.status(500).send('Something went wrong.');
+                res.status(500).send(
+                    {
+                        error: `Something went wrong. Please contact me by email ${process.env.MAILER_RECIPIENT || "."}`
+                    }
+                );
             });
     }
 });

@@ -25,7 +25,7 @@ const sendMessage = ({message, email}) => {
             },
             Subject: {
                 Charset: 'UTF-8',
-                Data: '[Hi]Someone just sent you a message! sharonzeng.com message'
+                Data: `[Hi]${email} just sent you a message! sharonzeng.com message`
             }
         },
         Source: email_sender,

@@ -7,9 +7,34 @@ export const Contact = () => {
     const [feedback, setFeedback] = useState(null);
 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = e => {
         e.preventDefault();
-        setFeedback("Thank you for your message! I'll reach out to you shortly.");
+
+        if (!message || !email) {
+            setFeedback("Please enter both your message and your email");
+            return
+        }
+
+        fetch('/api/message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({message, email}),
+        })
+            .then(response => response.json())
+            .then(resp => {
+                if (resp.status && resp.status === "ok") {
+                    setFeedback("Thank you for your message! I'll reach out to you shortly.");
+                } else {
+                    const error = resp.error || "Something went wrong, please try again later.";
+                    setFeedback(error);
+                }
+            })
+            .catch((e) => {
+                console.log("send message error", e);
+                setFeedback("Something went wrong, please try again later.");
+            })
     }
 
     return (
@@ -22,10 +47,12 @@ export const Contact = () => {
                 </div>
                 <div className={style.formInput}>
                     <textarea className={style.message} name="message" rows="5" cols="50" value={message}
+                              required
                               placeholder="Your Message here..."
                               onChange={e => setMessage(e.target.value)}
                     />
                     <input className={style.email} type="email" name="email" value={email}
+                           required
                            placeholder="Your Email Address"
                            onChange={e => setEmail(e.target.value)}
                     />
