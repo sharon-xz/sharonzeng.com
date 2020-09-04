@@ -36,7 +36,7 @@ app.post('/api/message', (req, res) => {
         sendMessage(body).then(
             function (data) {
                 console.log("Message Successfully Sent", data.MessageId);
-                res.status(400).send({
+                res.send({
                     status: "ok",
                     data: "Thank you for your message! I'll reach out to you shortly."
                 });
