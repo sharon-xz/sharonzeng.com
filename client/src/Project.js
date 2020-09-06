@@ -2,38 +2,75 @@ import React  from 'react';
 import style from './project.module.css';
 import profileProjectImage from "./assets/_images/sharonzeng_profile.png";
 
+const parse = require('html-react-parser');
+
 export const Project = () => {
+    const projects = [
+        {
+            title: "www.sharonzeng.com",
+            description: `Professional profile for Sharon Zeng.
+                        <ul>
+                            <li>Web design and coding all by Sharon Zeng.</li>
+                            <li>Contains a form which uses the AWS Simple Email Service to send an email to Sharon after form submission.</li>
+                        </ul>`,
+            image: profileProjectImage,
+            frontEnd: "React.js, react-router",
+            backEnd: "node.js, express.js, AWS SES",
+            hosting: "AWS Beanstalk",
+            siteLink: "https://www.sharonzeng.com",
+            sourceCode: "https://github.com/sharon-xz/sharonzeng.com"
+        }
+    ];
 
     return (
         <div className={style.project}>
             <h2 className={style.myProject}>My Projects</h2>
-            <div className={style.projectItem}>
-                <div className={style.projectImg}>
-                    <img src={profileProjectImage} alt="Project"/>
-                </div>
-                <div className={style.projectDescription}>
-                    <div className={style.projectTitle}>
-                        www.sharonzeng.com
-                    </div>
-                    <div className={style.projectTechStack}>
-                        Tech Stack:
-                        <div className={style.projectTech}>
-                            Front-End: React.js, react-router
+            {projects.map((project, index) => <div className={style.projectItem} key={index}>
+                    <div className={style.projectItemLeft}>
+                        <div className={style.projectTitle}>
+                            {project.title}
+                        </div>
+                        <div className={style.projectDescription}>
+                            {parse(project.description)}
 
                         </div>
-                        <div className={style.projectTech}>
-                            Back-End: Node.js
+                        <div className={style.projectTechStack}>
+                            <div className={style.projectTechStackTitle}>Tech Stack:</div>
+                            <div>Front-End:
+                                <span className={style.projectTech}> {project.frontEnd}</span>
+                            </div>
+                            <div>Back-End:
+                                <span className={style.projectTech}> {project.backEnd}</span>
+                            </div>
+                            <div>Hosting:
+                                <span className={style.projectTech}> {project.hosting}</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className={style.projectLink}>
-                        <a href="https://www.sharonzeng.com" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                        <a href="https://github.com/sharon-xz/sharonzeng.com" target="_blank" rel="noopener noreferrer">View Source Code</a>
+
                     </div>
 
+                    <div className={style.projectItemRight}>
+                        <div className={style.projectImg}>
+                            <img src={project.image} alt={project.title}/>
+                        </div>
+                        {project.siteLink &&
+                        <div className={style.projectLink}>
+                            <span className={style.projectLinkIcon}/>
+                            <a href={project.siteLink} target="_blank" rel="noopener noreferrer">Visit Site</a>
+                        </div>}
+
+                        {project.sourceCode &&
+                        <div className={style.projectLink}>
+                            <span className={style.projectCodeIcon}/>
+                            <a href={project.sourceCode} target="_blank" rel="noopener noreferrer">View
+                                Source Code</a>
+                        </div>}
+                    </div>
                 </div>
-            </div>
+            )
+            }
 
-            <div className={style.downArrow} />
+            <div className={style.downArrow}/>
         </div>
     );
 };
