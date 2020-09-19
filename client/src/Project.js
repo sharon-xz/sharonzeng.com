@@ -1,6 +1,7 @@
 import React  from 'react';
 import style from './project.module.css';
 import profileProjectImage from "./assets/_images/sharonzeng_profile.png";
+import adminProjectImage from "./assets/_images/adminProjectImage.png";
 
 const parse = require('html-react-parser');
 
@@ -19,6 +20,21 @@ export const Project = () => {
             hosting: "AWS Beanstalk",
             siteLink: "https://www.sharonzeng.com",
             sourceCode: "https://github.com/sharon-xz/sharonzeng.com"
+        },
+        {
+            title: "Admin Dashboard",
+            description: `An admin dashboard for admin users to configure settings, manage users and view statistics.
+                        <ul>
+                            <li>Constructed an admin panel using React from early stage to stable production.</li>
+                            <li>Featured Components such as Lists, Tables, Forms, Code Editor/Diff, Graphs.</li>
+                            <li>Heavily used redux, react-router, react-final-form</li>
+                        </ul>`,
+            image: adminProjectImage,
+            frontEnd: "React.js, react-router, redux, react-admin, Material-UI",
+            backEnd: "",
+            hosting: "",
+            siteLink: "",
+            sourceCode: ""
         }
     ];
 
@@ -39,12 +55,16 @@ export const Project = () => {
                             <div>Front-End:
                                 <span className={style.projectTech}> {project.frontEnd}</span>
                             </div>
-                            <div>Back-End:
+                            {project.backEnd && <div>Back-End:
                                 <span className={style.projectTech}> {project.backEnd}</span>
                             </div>
-                            <div>Hosting:
+                            }
+
+                            {project.hosting && <div>Hosting:
                                 <span className={style.projectTech}> {project.hosting}</span>
                             </div>
+                            }
+
                         </div>
 
                     </div>
