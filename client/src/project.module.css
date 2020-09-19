@@ -45,7 +45,8 @@
 }
 
 .projectImg img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
@@ -56,6 +57,7 @@
     line-height: 55px;
     letter-spacing: 0.6px;
     color: #313131;
+    word-break: break-word;
 }
 
 .projectDescription {
@@ -87,7 +89,8 @@
     font: lighter 24px/40px muli;
     letter-spacing: 0.56px;
     color: #FFF9E5;
-    width: 220px;
+    max-width: 220px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -141,4 +144,41 @@
 .downArrow {
     text-align: center;
     padding: 1.5em 0 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .myProject {
+        font-size: 42px;
+        line-height: 55px;
+    }
+
+    .projectItem {
+        flex-direction: column;
+    }
+
+    .projectItemLeft {
+        display: block;
+        width: 95%;
+        vertical-align: top;
+        padding: 10px;
+    }
+
+    .projectItemRight {
+        background: #313131 0% 0% no-repeat padding-box;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .projectTitle {
+        font-size: 25px;
+        line-height: 55px;
+        font-weight: 600;
+    }
+
+    .projectDescription {
+        font-weight: 300;
+
+    }
 }

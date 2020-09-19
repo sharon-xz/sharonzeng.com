@@ -3,7 +3,7 @@
     background: #313131;
     text-align: center;
     color: #FFF9E5;
-    padding: 0 0 50px 0;
+    padding: 0 2% 50px 2%;
 }
 
 .aboutMe {
@@ -58,4 +58,28 @@
 .downArrow {
     text-align: center;
     padding: 1em 0 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .aboutMe {
+        font-size: 42px;
+        line-height: 55px;
+        padding-bottom: 0.3em;
+    }
+
+    .intro {
+        font-size: 25px;
+        line-height: 53px;
+    }
+
+    .introTitle {
+        font: 22px/40px muli, san-serif;
+    }
+
+    .introDescription {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
 }

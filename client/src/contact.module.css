@@ -70,3 +70,15 @@
     border-radius: 10px;
     background-color: #fffce9;
 }
+
+@media screen and (max-width: 600px) {
+    .contactMe {
+        font-size: 42px;
+        line-height: 55px;
+    }
+
+    .contact form {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}

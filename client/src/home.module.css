@@ -98,3 +98,21 @@ h2 {
     text-align: center;
     padding: 0.5em 0 1.8em;
 }
+
+@media screen and (max-width: 600px) {
+    .headingFirstName {
+        font-size: 65px;
+        line-height: 45px;
+    }
+
+    .headingLastName {
+        font-style: normal;
+        font-size: 60px;
+        line-height: 55px;
+    }
+
+    .externalLinks {
+        padding-top: 1.5em;
+    }
+
+}
