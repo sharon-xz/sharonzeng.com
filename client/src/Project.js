@@ -2,6 +2,7 @@ import React  from 'react';
 import style from './project.module.css';
 import profileProjectImage from "./assets/_images/sharonzeng_profile.png";
 import adminProjectImage from "./assets/_images/adminProjectImage.png";
+import forumProjectImage from "./assets/_images/forumProjectImage.jpg";
 
 const parse = require('html-react-parser');
 
@@ -11,8 +12,8 @@ export const Project = () => {
             title: "www.sharonzeng.com",
             description: `Professional profile for Sharon Zeng.
                         <ul>
-                            <li>Web design and coding all by Sharon Zeng.</li>
-                            <li>Contains a form which uses the AWS Simple Email Service to send an email to Sharon after form submission.</li>
+                            <li>Web design and coding by Sharon Zeng.</li>
+                            <li>Contains a form that uses the AWS Simple Email Service to send an email to Sharon after form submission.</li>
                         </ul>`,
             image: profileProjectImage,
             frontEnd: "React.js, react-router",
@@ -34,6 +35,20 @@ export const Project = () => {
             backEnd: "",
             hosting: "",
             siteLink: "",
+            sourceCode: ""
+        },
+        {
+            title: "News Forum",
+            description: `A forum with strong social media functionality
+                        <ul>
+                            <li>Built reusable components with a focus on user experience. </li>
+                            <li>Performed unit test using Jest, Enzyme</li>
+                        </ul>`,
+            image: forumProjectImage,
+            frontEnd: "React.js, react-router, redux, SCSS",
+            backEnd: "",
+            hosting: "",
+            siteLink: "", //https://myforum.theepochtimes.com/
             sourceCode: ""
         }
     ];
