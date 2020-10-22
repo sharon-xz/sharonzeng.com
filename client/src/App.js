@@ -1,5 +1,5 @@
 import React from 'react';
-import {Home} from './Home';
+import {HomePage} from './HomePage';
 import {Project} from './Project';
 import {Contact} from './Contact';
 import {About} from './About';
@@ -10,37 +10,20 @@ import {
     Route
 } from "react-router-dom";
 import {Footer} from "./Footer";
+import withTracker from './withTracker';
 
 export const App = () => (
     <Router>
         <Nav/>
         <div>
             <Switch>
-                <Route path="/about">
-                    <About/>
-                    <Footer/>
-                </Route>
-                <Route path="/contact">
-                    <Contact/>
-                    <Footer/>
-                </Route>
-                <Route path="/projects">
-                    <Project/>
-                    <Footer/>
-                </Route>
-                <Route path="/contact">
-                    <Contact/>
-                    <Footer/>
-                </Route>
-                <Route path="/">
-                    <Home/>
-                    <About/>
-                    <Project/>
-                    <Contact/>
-                    <Footer/>
-                </Route>
+                <Route path="/about" component={withTracker(About)} />
+                <Route path="/contact" component={withTracker(Contact)} />
+                <Route path="/projects" component={withTracker(Project)} />
+                <Route path="/" component={withTracker(HomePage)} />
             </Switch>
         </div>
+        <Footer/>
     </Router>
 
 );
