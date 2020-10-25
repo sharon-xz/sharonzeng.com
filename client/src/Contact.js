@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import style from "./contact.module.css";
+import ReactGA from 'react-ga';
 
 export const Contact = () => {
     const [message, setMessage] = useState("");
@@ -26,6 +27,14 @@ export const Contact = () => {
             .then(resp => {
                 if (resp.status && resp.status === "ok") {
                     setFeedback("Thank you for your message! I'll reach out to you shortly.");
+
+                    ReactGA.event({
+                        category: 'Contact',
+                        action: 'submit_email_form',
+                        label: 'Submit Email Form',
+                        value: 1
+                    });
+
                 } else {
                     const error = resp.error || "Something went wrong, please try again later.";
                     setFeedback(error);
