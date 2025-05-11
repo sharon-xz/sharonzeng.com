@@ -3,8 +3,7 @@ import style from './project.module.css';
 import profileProjectImage from "./assets/_images/sharonzeng_profile.png";
 import adminProjectImage from "./assets/_images/adminProjectImage.png";
 import forumProjectImage from "./assets/_images/forumProjectImage.jpg";
-
-const parse = require('html-react-parser');
+import parse from 'html-react-parser';
 
 export const Project = () => {
     const projects = [
@@ -62,8 +61,7 @@ export const Project = () => {
                             {project.title}
                         </div>
                         <div className={style.projectDescription}>
-                            {parse(project.description)}
-
+                            {typeof project.description === 'string' ? parse(project.description) : ''}
                         </div>
                         <div className={style.projectTechStack}>
                             <div className={style.projectTechStackTitle}>Tech Stack:</div>

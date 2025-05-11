@@ -6,7 +6,7 @@ import {About} from './About';
 import {Nav} from './Nav';
 import {
     BrowserRouter as Router,
-    Switch,
+    Routes,
     Route
 } from "react-router-dom";
 import {Footer} from "./Footer";
@@ -16,12 +16,12 @@ export const App = () => (
     <Router>
         <Nav/>
         <div>
-            <Switch>
-                <Route path="/about" component={withTracker(About)} />
-                <Route path="/contact" component={withTracker(Contact)} />
-                <Route path="/projects" component={withTracker(Project)} />
-                <Route path="/" component={withTracker(HomePage)} />
-            </Switch>
+            <Routes>
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/projects" element={<Project />} />
+                <Route path="/" element={<HomePage />} />
+            </Routes>
         </div>
         <Footer/>
     </Router>
