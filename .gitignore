@@ -10,7 +10,7 @@ client/node_modules
 client/coverage
 
 # production
-#client/build
+client/build
 
 # misc
 .DS_Store
@@ -29,3 +29,8 @@ yarn-error.log*
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Cloudflare CLI build output
+.cloudflare/
+.wrangler/
+.dev.vars*

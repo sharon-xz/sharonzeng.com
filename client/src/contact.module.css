@@ -14,61 +14,33 @@
     margin: 0;
 }
 
-.formTitle {
+.intro {
     font-weight: 300;
     letter-spacing: 1.05px;
     font-size: 27px;
     line-height: 57px;
-    text-align: center;
     color: #FFFCEE;
+    margin: 0;
 }
 
-.formSubtitle {
+.subtitle {
     font-weight: lighter;
     font-size: 21px;
     line-height: 40px;
     letter-spacing: 0.75px;
-    text-align: center;
     color: #FFFCEE;
     max-width: 506px;
     margin: 0 auto 1em;
 }
 
-.formInput {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 506px;
-    margin: 0 auto;
-}
-
-.message {
-    width: 95%;
-    border: 1px solid #707070;
-    font: normal normal 300 21px/40px Muli;
+.email {
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 21px;
+    line-height: 40px;
     letter-spacing: 0.75px;
-    padding: 5px 10px;
-    margin-bottom: 1em;
-    resize: none;
-}
-
-.email{
-    width: 95%;
-    border: 1px solid #707070;
-    font: normal normal 300 21px/40px Muli;
-    letter-spacing: 0.75px;
-    padding: 5px 10px;
-    margin-bottom: 1em;
-}
-
-.submitBtn {
-    width: 100%;
-    font: normal normal 300 21px/40px Muli;
-    letter-spacing: 0.75px;
-    margin-bottom: 1em;
-    border: 1px solid #707070;
-    border-radius: 10px;
-    background-color: #fffce9;
+    color: #FFFCEE;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
@@ -77,8 +49,18 @@
         line-height: 55px;
     }
 
-    .contact form {
+    .intro {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .subtitle,
+    .email {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .subtitle {
         max-width: 95%;
-        margin: 0 auto;
     }
 }

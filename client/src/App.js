@@ -10,7 +10,6 @@ import {
     Route
 } from "react-router-dom";
 import {Footer} from "./Footer";
-import withTracker from './withTracker';
 
 export const App = () => (
     <Router>

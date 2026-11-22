@@ -12,12 +12,12 @@ export const Project = () => {
             description: `Professional profile for Sharon Zeng.
                         <ul>
                             <li>Web design and coding by Sharon Zeng.</li>
-                            <li>Contains a form that uses the AWS Simple Email Service to send an email to Sharon after form submission.</li>
+                            <li>A static React site. Contact is a mailto link.</li>
                         </ul>`,
             image: profileProjectImage,
             frontEnd: "React.js, react-router",
-            backEnd: "node.js, express.js, AWS SES",
-            hosting: "AWS Beanstalk",
+            backEnd: "",
+            hosting: "Cloudflare",
             siteLink: "https://www.sharonzeng.com",
             sourceCode: "https://github.com/sharon-xz/sharonzeng.com"
         },
