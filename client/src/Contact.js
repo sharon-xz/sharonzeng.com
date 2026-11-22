@@ -7,7 +7,6 @@ export const Contact = () => {
     return (
         <div className={style.contact}>
             <h2 className={style.contactMe}>Contact Me</h2>
-            <p className={style.intro}>I'm open to freelance opportunities!</p>
             <p className={style.subtitle}>
                 If you need help with something or just wanna say hi, feel free to message me:
             </p>

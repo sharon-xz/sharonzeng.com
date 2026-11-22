@@ -17,7 +17,7 @@ export const Project = () => {
             image: profileProjectImage,
             frontEnd: "React.js, react-router",
             backEnd: "",
-            hosting: "Cloudflare",
+            hosting: "",
             siteLink: "https://www.sharonzeng.com",
             sourceCode: "https://github.com/sharon-xz/sharonzeng.com"
         },

@@ -14,15 +14,6 @@
     margin: 0;
 }
 
-.intro {
-    font-weight: 300;
-    letter-spacing: 1.05px;
-    font-size: 27px;
-    line-height: 57px;
-    color: #FFFCEE;
-    margin: 0;
-}
-
 .subtitle {
     font-weight: lighter;
     font-size: 21px;
@@ -47,11 +38,6 @@
     .contactMe {
         font-size: 42px;
         line-height: 55px;
-    }
-
-    .intro {
-        font-size: 22px;
-        line-height: 36px;
     }
 
     .subtitle,
