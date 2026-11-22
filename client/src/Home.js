@@ -12,9 +12,9 @@ export const Home = () => {
             <h2 className={style.headingDescription}>A Front-End Web Developer</h2>
 
             <div className={style.externalLinks}>
-                <a href="https://www.linkedin.com/in/sharon-xz" target="_blank" rel="noopener noreferrer" className={style.linkedInBtn} />
-                <a href="https://github.com/sharon-xz" target="_blank" rel="noopener noreferrer" className={style.githubBtn} />
-                <a href={null} className={style.devtoBtn} />
+                <a href="https://www.linkedin.com/in/sharon-xz" target="_blank" rel="noopener noreferrer" className={style.linkedInBtn} aria-label="Sharon Zeng on LinkedIn" />
+                <a href="https://github.com/sharon-xz" target="_blank" rel="noopener noreferrer" className={style.githubBtn} aria-label="Sharon Zeng on GitHub" />
+                <span className={style.devtoBtn} aria-hidden="true" />
             </div>
 
             <div className={style.downArrow} />

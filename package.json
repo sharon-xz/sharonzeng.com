@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "npm start --prefix client",
+    "postinstall": "npm ci --prefix client",
     "build": "npm run build --prefix client",
     "preview": "cf dev",
     "deploy": "cf deploy"

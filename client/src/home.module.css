@@ -53,7 +53,8 @@ h2 {
     padding: 1em 0 2em;
 }
 
-.externalLinks > a {
+.externalLinks > a,
+.externalLinks > span {
     margin: 1em 0.8em;
 }
 
